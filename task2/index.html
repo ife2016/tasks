@@ -53,7 +53,7 @@
             <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的<a href="">这是一个链接</a>段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落</p>
             <img src="http://ife.baidu.com/asset/img/logo.png"/>
             <ul>
-            	<li>列表项目一</li>
+                <li>列表项目一</li>
                 <li>列表项目二</li>
                 <li>列表项目三</li>
             </ul>
@@ -98,7 +98,7 @@
                     <tr>
                         <th>Month</th>
                         <th>Savings</th>
-                        <th>Total</th>
+                        <th>Operation</th>
                     </tr>
                 </thead>
 
@@ -132,42 +132,78 @@
 
                 <tfoot>
                     <tr>
-                        <td>All</td>
+                        <td>Total</td>
                         <td colspan="2">$</td>
                       </tr>
                 </tfoot>
             </table>
         </article>
 
-        <h2>侧栏</h2>
-        <h3>侧栏标题</h3>
-        <form action="" method="post">
-    	    <p>请输入邮箱地址：<input type="email" placeholder="这是一个文本输入框" /></p>
-    	    <p>邮件地址请按要求格式输入</p>
-    		<p>请输入密码<input type="password" placeholder="这是一个文本输入框" />请重复输入密码<input type="password" placeholder="这是一个文本输入框" /></p>
-    		<p>密码请为6-16位英文数字</p>
-    	    <p>
-    			<input type="radio" name="sex" id="male" value="male" />
-    			<label for="male">男</label>
-    			<input type="radio" name="sex" id="female" value="female" />
-    			<label for="female">女</label>
-    			<label>城市：</label> 
-    			<select name="city"> 
-    				<option value="beijing">北京</option> 
-    				<option value="shanghai">上海</option>
-    				<option value="guangzhou">广州</option>
-    			</select>
-    			
-    			<input type="checkbox" name="hobby" value="sport" id="sport">
-    			<label for="sport">运动</label>
-    			<input type="checkbox" name="hobby" value="art" id="sport">
-    			<label for="art">艺术</label>
-    			<input type="checkbox" name="hobby" value="science" id="science">
-    	        <label for="science">科学</label>
-    	        <textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
-    	        <input type="submit" />
-    	    </p>
-    	</form>
-        <p>定福庄小霸王&copy;</p>
+        <aside>
+            <h1>侧栏</h1>
+            <form action="" method="post" id="aside-form">
+                <table>
+                    <tr>
+                        <td class="align-right">请输入邮箱地址：</td>
+                        <td class="align-left"><input type="email" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="align-left info-text">邮件地址请按要求格式输入</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">请输入密码：</td>
+                        <td class="align-left"><input type="password" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">请重复输入密码：</td>
+                        <td class="align-left"><input type="password" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="align-left info-text">密码请为6-16位英文数字</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">性别：</td>
+                        <td class="align-left">
+                            <input type="radio" name="sex" id="male" value="male" />
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female" value="female" />
+                            <label for="female">女</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right"><label>城市：</label></td>
+                        <td class="align-left">
+                            <select name="city">
+                                <option value="beijing">北京</option>
+                                <option value="shanghai">上海</option>
+                                <option value="guangzhou">广州</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">爱好：</td>
+                        <td class="align-left">
+                            <input type="checkbox" name="hobby" value="sport" id="sport">
+                            <label for="sport">运动</label>
+                            <input type="checkbox" name="hobby" value="art" id="sport">
+                            <label for="art">艺术</label>
+                            <input type="checkbox" name="hobby" value="science" id="science">
+                            <label for="science">科学</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">个人描述：</td>
+                        <td class="align-left"><textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea></td>
+                    </tr>
+                    <br />
+                </table>
+                <input type="submit" class="btn" />
+            </form>
+        </aside>
+        <footer>
+            <p class="copyright">定福庄小霸王&copy;</p>
+        </footer>
     </body>
 </html>
