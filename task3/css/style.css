@@ -1,0 +1,41 @@
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+html,body,p{margin:0; padding: 0;height: 100%;width: 100%;overflow: hidden;}
+.main, .team, .members, .intro {
+	border: 1px solid #999;
+	padding: 20px;
+	word-break: break-all;
+
+}
+
+.main {
+	margin: 20px;
+	background-color: #eee;
+}
+.team {
+	float: left;
+	width: 200px;
+	height: 120px;
+	padding-right: 0px;
+	background-color: #fff;
+}
+.members {
+	float: right;
+	width: 120px;
+	background-color: #fff;
+	padding-bottom: 0px;
+}
+.intro {
+	margin-left: 240px;
+	margin-right: 160px;
+	background-color: #fff;
+}
+
+.team-logo {float: left;}
+.clearfix {overflow: auto;}
+.clear {clear: both;}
+.avatar {margin-bottom: 20px;}
+.avatar img {width: 80px;}
