@@ -22,8 +22,9 @@
 
         <article id="article_1">
             <header>
-                <h2>文章一级标题</h2>
-                <h3>文章二级标题</h3>
+                <h1>文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
             </header>
 
             <p>你好世界</p>
@@ -42,8 +43,9 @@
         
         <article id="article_2">
             <header>
-                <h2>文章一级标题</h2>
-                <h3>文章二级标题</h3>
+                <h1>文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
             </header>
             
             <p>你好世界</p>
@@ -55,44 +57,34 @@
                 <li>列表项目二</li>
                 <li>列表项目三</li>
             </ul>
-            <h4>图片</h4>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
-            <p>好看的图片</p>
-            <img src="http://ife.baidu.com/asset/img/logo.png"/>
-            <br>
+            <figure>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+                <figcaption>好看的图片</figcaption>
+            </figure>
+            <figure>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+                <figcaption>好看的图片</figcaption>
+            </figure>
+            <figure>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+                <figcaption>好看的图片</figcaption>
+            </figure>
+            <figure>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+                <figcaption>好看的图片</figcaption>
+            </figure>
+            <figure>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+                <figcaption>好看的图片</figcaption>
+            </figure>
+
         </article>
 
         <article id="article_3">
             <header>
-                <h2>最后文章一级标题</h2>
-                <h3>文章二级标题</h3>
-                <p>文章作者 文章发表时间</p>
+                <h1>最后文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
             </header>    
         
             <ol>
@@ -101,43 +93,52 @@
                 <li>排名一</li>
             </ol>
             <p>下面是一个表格</p>
-            <table border="1">
-          		<tr>
-            		<th>Month</th>
-            		<th>Savings</th>
-                    <th>Total</th>
-          		</tr>
-          		<tr>
-            		<td>January</td>
-            		<td>$100</td>
-                    <td><a href="">$100</a></td>
-          		</tr>
-                <tr>
-            		<td>January</td>
-            		<td>$100</td>
-                    <td><a href="">$100</a></td>
-          		</tr>
-                <tr>
-            		<td>January</td>
-            		<td>$100</td>
-                    <td><a href="">$100</a></td>
-          		</tr>
-                <tr>
-            		<td>January</td>
-            		<td>$100</td>
-                    <td><a href="">$100</a></td>
-          		</tr>
-                <tr>
-            		<td>January</td>
-            		<td>$100</td>
-                    <td><a href="">$100</a></td>
-          		</tr>
-                <tr>
-            		<td>January</td>
-            		<td colspan="2">$100</td>
-          		</tr>
-        	</table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>$100</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$200</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$300</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>$400</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>$500</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>All</td>
+                        <td colspan="2">$</td>
+                      </tr>
+                </tfoot>
+            </table>
         </article>
+
         <h2>侧栏</h2>
         <h3>侧栏标题</h3>
         <form action="" method="post">

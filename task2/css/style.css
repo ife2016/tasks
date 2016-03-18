@@ -1,5 +1,5 @@
 html{color:#000;background:#fff;}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td,figure{margin:0;padding:0;}
 
 body {
 	background-color: #bbb;
@@ -38,4 +38,40 @@ article {
 	border-top: 1px solid #aaa;
 	border-left: 1px solid #aaa;
 	box-shadow: 3px 3px 1px grey;
+}
+article header h1 {
+	font-size: 1.5em;
+}
+article header h2 {
+	font-size: 1em;
+	color:grey;
+}
+article header .article-info {
+	font-size: 0.5em;
+	color:grey;
+}
+article p {
+	text-indent: 2em;
+}
+article figure {
+	border: 1px solid grey;
+	display: inline-block;
+	margin: 5px;
+}
+table {
+	border-collapse:collapse;
+	width: 100%;
+
+}
+table thead {
+	background-color: #222;
+	color: white;
+	text-align: left;
+}
+table, th, td {
+	border: 1px solid grey;
+	padding: 2px;
+}
+table tfoot {
+	background-color: grey;
 }
