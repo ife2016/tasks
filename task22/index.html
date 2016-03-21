@@ -1,10 +1,135 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-	<meta charset="UTF-8">
-	<title>Task 22</title>
+        <meta charset="UTF-8">
+        <title>Task 22</title>
 </head>
+<style>
+body{
+        padding: 5px;
+        margin: 0;
+}
+
+.parent {
+    display: flex;
+    border: 1px solid #f00;
+    height: 100px;
+    /*padding: 10px;*/
+}
+
+.child {
+    display: flex;
+    margin: 10px;
+    -webkit-flex: 1;
+    flex: 1;
+    border: 1px solid #000;
+    height: 70%;
+
+}
+
+</style>
 <body>
-	
+    <div class="parent" id="root">root
+        <div class="child" id="1">1
+            <div class="child" id="3">3
+                <div class="child" id="8">8</div>
+                <div class="child" id="13">13</div>
+            </div>
+            <div class="child" id="4">4
+                <div class="child" id="9">9</div>
+                <div class="child" id="14">14</div>
+            </div>    
+        </div>
+
+        <div class="child" id="2">2
+            <div class="child" id="5">5
+                <div class="child" id="6">6
+                    
+                </div>
+                <div class="child" id="7">7
+                    
+                </div>
+            </div>
+            <div class="child" id="10">10
+                <div class="child" id="11">11</div>
+                <div class="child" id="12">12</div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="pre(root);">前序遍历</button>
+    <button onclick="mid(root);">中序遍历</button>
+    <button onclick="post(root);">后序遍历</button>
+    <br />
+    <p id="pre">前序遍历：</p>
+    <p id="mid">中序遍历</p>
+    <p id="post">后序遍历：</p>
+<script>
+
+var root = document.getElementById('root');
+var preResult = document.getElementById('pre');
+var midResult = document.getElementById('mid');
+var postResult = document.getElementById('post');
+function pre (father) {
+    console.info(father.id);
+    var lchild = father.children[0];
+    var rchild = father.children[1];
+
+    father.style.backgroundColor="red";
+    alert("id: "+ father.id);
+    preResult.innerText += father.id + ", ";
+    father.style.backgroundColor="";
+
+    if (lchild) {
+        alert("enter left of "+ father.id);
+        pre(lchild);
+    }
+    if (rchild){
+        alert("enter right of " + father.id);
+        pre(rchild);
+    }
+}
+function mid (father) {
+    var lchild = father.children[0];
+    var rchild = father.children[1];
+
+    if (lchild) {
+        alert("enter left of "+ father.id);
+        mid(lchild);
+    }
+
+    console.info(father.id);
+    father.style.backgroundColor="red";
+    alert("id: "+ father.id);
+    midResult.innerText += father.id + ", ";
+    father.style.backgroundColor="";
+
+    if (rchild){
+        alert("enter right of " + father.id);
+        mid(rchild);
+    }
+}
+
+function post (father) {
+    var lchild = father.children[0];
+    var rchild = father.children[1];
+
+    if (lchild) {
+        alert("enter left of "+ father.id);
+        post(lchild);
+    }
+    if (rchild){
+        alert("enter right of " + father.id);
+        post(rchild);
+    }
+
+    console.info(father.id);
+    father.style.backgroundColor="red";
+    alert("id: "+ father.id);
+    postResult.innerText += father.id + ", ";
+    father.style.backgroundColor="";
+}
+</script> 
+
 </body>
 </html>
