@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+box {
+    width: 150px;
+    border: 1px solid #f00;
+}
+
+.box1 {
+    height: 120px;
+}
+
+.box2 {
+    height: 100px;
+}
+
+.box3 {
+    height: 40px;
+}
+
+.box4 {
+    height: 200px;
+    border: 1px solid #0f0;
+}
+
+content {
+    display: flex;
+    height: 280px;
+    padding: 20px;
+    justify-content: space-between;
+}
+    
+
+@media(min-width:640px) {
+    content {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+
+@media(max-width:640px) {
+    content {
+        flex-flow: row wrap;
+        align-content: space-between;     
+    }
+    
+    .box4 {
+        order: -1;
+    }
+}
