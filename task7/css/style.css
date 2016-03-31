@@ -3,3 +3,54 @@ html,body {
 	padding:0;
 	min-width:1280px;
 }
+
+header {
+	width:1280px;
+	height:57px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.logo {
+	margin:13px;
+	margin-left:59px;
+	height:31px;
+	width:128px;
+	float:left;
+	overflow:hidden;
+}
+
+.logo img {
+	width:31px;
+	height:31px;
+	margin-right:11px;
+	display:block;
+	float:left;
+}
+
+.logo p {
+	margin:0;
+	line-height:31px;
+	font-size:21px;
+	font-family:"黑体";
+	float:left;
+}
+
+header ul {
+	list-style:none;
+	list-style-type:none;
+	float:left;
+	margin-left:500px;
+	padding:0;
+	overflow:hidden;
+}
+
+header li {
+	float:left;
+}
+
+.logIn {
+}
+
+.line {
+}
