@@ -3,7 +3,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,
 
 body {
 	background-color: #bbb;
-	min-width: 1200px;
 }
 img {
     display: block;
@@ -35,18 +34,10 @@ nav li a:visited {
 	color: grey;
 }
 
-.article-all {
-	overflow: hidden;
-}
-
-.article {
-	float: left;
-	width: 60%;
-}
-
 article {
 	background-color: #fff;
 	margin: 30px;
+    margin-right: 470px;
 	padding: 30px;
 	border-top: 1px solid #aaa;
 	border-left: 1px solid #aaa;
@@ -79,12 +70,17 @@ article figure {
 .article_2 ul {
     list-style-type: none;
 }
+
+.article_3 {
+    overflow: hidden;
+}
 .article_3 figure {
     display: block;
     margin-bottom: 1.5em;
     padding: 1em;
     width: 10em;
     background-color: #CCC;
+    float: left;
 }
 .article_3 figcaption {
     width: 10em;
@@ -121,7 +117,7 @@ aside {
 	border-top: 1px solid #aaa;
 	border-left: 1px solid #aaa;
 	box-shadow: 3px 3px 1px grey;
-	float: left;
+	float: right;
 	width: 350px;
 }
 aside h1 {
