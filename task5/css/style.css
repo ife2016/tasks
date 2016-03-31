@@ -3,6 +3,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,
 
 body {
 	background-color: #bbb;
+	min-width: 1200px;
 }
 img {
     display: block;
@@ -32,6 +33,15 @@ nav li a {
 }
 nav li a:visited {
 	color: grey;
+}
+
+.article-all {
+	overflow: hidden;
+}
+
+.article {
+	float: left;
+	width: 60%;
 }
 
 article {
@@ -106,10 +116,13 @@ article figure {
 aside {
 	background-color: #fff;
 	margin: 30px;
+	margin-left: 0;
 	padding: 30px;
 	border-top: 1px solid #aaa;
 	border-left: 1px solid #aaa;
 	box-shadow: 3px 3px 1px grey;
+	float: left;
+	width: 350px;
 }
 aside h1 {
 	border-left: 5px solid grey;
