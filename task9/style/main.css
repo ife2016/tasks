@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    width: 100%;
+}
+
+div {
+    float: left;
+}
+
+/*index*/
+
+.header {
+    width: 100%;
+    background-color: #2189bf;
+    height: 56px;
+}
+
+.logo {
+    margin: 10.6px 0  0 50px;
+    background: url(picture/logo.png) no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.search {
+    margin: 15px 15px 0 75%;
+    height: 20px;
+}
+
+.info {
+    margin-top: 17px;
+    margin-left: 15px;
+    padding-left: 20px;
+    background: url(picture/personal.png) no-repeat;
+    color: aliceblue;
+    font-size: 0.8em;
+}
+
+/*header*/
+.sidebar {
+    width: 20.8%;
+    height: 1000px;
+    background-color: #2b2e3d;
+}
+
+.sideInfo {
+    width: 100%;
+    height: 150px;
+}
+
+.name {
+    line-height: 60px;
+}
+
+.avatar {
+    background: url(picture/avatar.png) no-repeat;
+    background-position: right;
+}
+
+.sideInfo div {
+    margin: 15px 0 0 15px;
+    width: 40%;
+    height: 60px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.collections {
+    line-height: 30px;
+    border-right: 1px aqua solid;
+}
+
+.fans {
+    line-height: 30px;
+}
+
+.sidebar .row {
+    height: 45px;
+    width: 85%;
+    margin: 0 5% 0 5%;
+    padding: 0 2.5% 0 2.5%;
+    line-height: 45px;
+    text-align: center;
+    color: aliceblue;
+    background: url(picture/icon.png) 40px 15px no-repeat;
+}
+
+/*sidebar*/
+.content {
+    background-color: #faf9f9;
+    width: 79%;
+    height: 100%;
+}
+
+.nav {
+    background: white;
+    color: darkgrey;
+    width: 100%;
+    padding-left: 50px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.nav div {
+    padding: 0 2px 0 2px; 
+}
+
+.navOn {
+    color: aqua;
+}
+
+/*nav*/
+
+.aquire {
+    padding-top: 10px;
+    background: #EEE;
+    width: 86%;
+    margin: 2% 5% 2% 5%;
+    height: 85px;
+}
+
+.aquireBox select {
+    height: 25px;
+    width: 80%;
+}
+
+.aquireBox {
+    line-height: 25px;
+    height: 25px;
+    width: 22%;
+    margin: 2px;
+    padding: 2px;
+}
+
+button {
+    margin: 28px 0 5px 0;
+    background: #2189bf;
+    border: none;
+    color: white;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*list*/
+.list {
+    text-align: center;
+    background: #eee;
+    height: 65px;
+    width: 86%;
+    margin: 1% 5% 1% 5%;
+}
+
+.list div {
+    background: white;
+    height: 65px;
+    margin-right: 2px;
+}
+
+.arrowL {
+    background: url(picture/arrowL.png);
+    width: 30px;
+    line-height: 65px;
+}
+
+.opts {
+    line-height: 30px;
+    width: 13.4%;
+}
+
+.arrowR {
+    line-height: 65px;
+    background: url(picture/arrowL.png);
+    width: 30px;
+}
