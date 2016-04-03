@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task5</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="nav-bar">
+            <div id="logo"><img src="img/bd_logo.png" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="#article_1">导航链接1</a></li>
+                    <li><a href="#article_2">导航链接2</a></li>
+                    <li><a href="#article_3">导航链接3</a></li>
+                    <li><a href="#">导航链接4</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <aside>
+            <h1>侧栏</h1>
+            <form action="" method="post" id="aside-form">
+                <table>
+                    <tr>
+                        <td class="align-right">请输入邮箱地址：</td>
+                        <td class="align-left"><input type="email" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="align-left info-text">邮件地址请按要求格式输入</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">请输入密码：</td>
+                        <td class="align-left"><input type="password" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">请重复输入密码：</td>
+                        <td class="align-left"><input type="password" placeholder="这是一个文本输入框" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="align-left info-text">密码请为6-16位英文数字</td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">性别：</td>
+                        <td class="align-left">
+                            <input type="radio" name="sex" id="male" value="male" />
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female" value="female" />
+                            <label for="female">女</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right"><label>城市：</label></td>
+                        <td class="align-left">
+                            <select name="city">
+                                <option value="beijing">北京</option>
+                                <option value="shanghai">上海</option>
+                                <option value="guangzhou">广州</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">爱好：</td>
+                        <td class="align-left">
+                            <input type="checkbox" name="hobby" value="sport" id="sport">
+                            <label for="sport">运动</label>
+                            <input type="checkbox" name="hobby" value="art" id="sport">
+                            <label for="art">艺术</label>
+                            <input type="checkbox" name="hobby" value="science" id="science">
+                            <label for="science">科学</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-right">个人描述：</td>
+                        <td class="align-left"><textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea></td>
+                    </tr>
+                    <br />
+                </table>
+                <input type="submit" class="btn" />
+            </form>
+        </aside>
+        
+        <article class="article_1">
+            <header>
+                <h1>文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
+            </header>
+
+            <p>你好世界</p>
+            <p>
+                这是一个很长的段落，这是一个很长的段落，换<br />行这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落
+            </p>
+            <p>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的<a href="">这是一个链接</a>段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落
+            </p>
+            <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            <p>
+                这是一个很长的段落，这是一个很长换<br />行的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落
+            </p>
+            <p>这是一个很长的段落，<b>这是一个很长的粗体字</b>，这是一个很长的段落，这是一个很长的段落，这是一个很长的<a href="http://ife.baidu.com" target="_blank">这是一个链接新窗口打开到http://ife.baidu.com</a>段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落</p>        
+        </article>
+        
+        <article class="article_2">
+            <header>
+                <h1>文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
+            </header>
+            
+            <p>你好世界</p>
+            <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落</p>
+            <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的<a href="">这是一个链接</a>段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落</p>
+            <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+        </article>
+        <article class="article_3">
+            <header>
+                <h1>图片</h1>
+            </header>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="http://ife.baidu.com/asset/img/logo.png"/>
+            </figure>
+        </article>
+
+        <article class="article_4">
+            <header>
+                <h1>最后文章一级标题</h1>
+                <h2>文章二级标题</h2>
+                <p class="article-info">文章作者 文章发表时间</p>
+            </header>    
+        
+            <ol>
+                <li>排名一</li>
+                <li>排名一</li>
+                <li>排名一</li>
+            </ol>
+            <p>下面是一个表格</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                        <th>Operation</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>$100</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$200</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$300</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>$400</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>$500</td>
+                        <td><a href="">Delete</a></td>
+                      </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td colspan="2">$</td>
+                      </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <footer>
+            <p class="copyright">定福庄小霸王&copy;</p>
+        </footer>
+    </body>
+</html>
