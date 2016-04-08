@@ -637,8 +637,9 @@ header li:first-child {
 }
 
 .sec-8-boxTitle {
-    font-size: 21px;
+    font-size: 14px;
     margin-bottom: 25px;
+	color:rgba(35,24,21,0.80);
 }
 
 .sec-8-boxSubTitle {
@@ -677,8 +678,11 @@ header li:first-child {
     height: 40px;
     background-color: #ededef;
     border: none;
-    padding: 0;
+    padding: 0 12px;
+	box-sizing:border-box;
     line-height: 40px;
+	color:rgba(35,28,21,0.80);
+	font-size:12px;
 }
 
 .sec-8-input-1 input:nth-child(1) {
@@ -701,13 +705,16 @@ header li:first-child {
     width: 640px;
 }
 
-.sec-8-input-2 input {
+.sec-8-input-2 textarea {
     width: 640px;
     height: 120px;
     background-color: #ededef;
     border: none;
-    padding: 0;
+    padding: 8px 12px;
     margin: 0 15px 15px 0;
+	box-sizing:border-box;
+	color:rgba(35,28,21,0.80);
+	font-size:12px;
 }
 
 .sec-8-input-3 button {
@@ -717,6 +724,8 @@ header li:first-child {
     border: none;
     line-height: 40px;
     text-align: center;
+	font-family:"黑体";
+	font-size:14px;
 }
 
 footer {
