@@ -55,18 +55,37 @@ var pageState = {
  * 渲染图表
  */
 function renderChart() {
-
+  if (pageState.nowGraTime == 'day') {
+    
+    return;
+  }
+  if (pageState.nowGraTime == 'week') {
+    
+    return;
+  }
+  if (pageState.nowGraTime == 'month') {
+    
+    return;
+  }
 }
 
 /**
  * 日、周、月的radio事件点击时的处理函数
  */
 function graTimeChange() {
+  var radios = document.getElementsByName('gra-time');
+  var checkedValue;
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) checkedValue = radios[i].value;
+  }
+  alert(checkedValue);
   // 确定是否选项发生了变化 
-
-  // 设置对应数据
-
-  // 调用图表渲染函数
+  if (pageState.nowGraTime != checkedValue) {
+    // 设置对应数据
+    pageState.nowGraTime = checkedValue;
+    // 调用图表渲染函数
+    renderChart();
+  }
 }
 
 /**
@@ -74,17 +93,21 @@ function graTimeChange() {
  */
 function citySelectChange() {
   // 确定是否选项发生了变化 
-
-  // 设置对应数据
-
-  // 调用图表渲染函数
+  var select = document.getElementById('city-select');
+  if (pageState.nowSelectCity != select.value) {
+    // 设置对应数据
+    pageState.nowSelectCity = select.value;
+    // 调用图表渲染函数
+    renderChart();
+  }
 }
 
 /**
  * 初始化日、周、月的radio事件，当点击时，调用函数graTimeChange
  */
 function initGraTimeForm() {
-
+  var gra = document.getElementById('form-gra-time');
+  gra.onchange = graTimeChange;
 }
 
 /**
@@ -92,9 +115,14 @@ function initGraTimeForm() {
  */
 function initCitySelector() {
   // 读取aqiSourceData中的城市，然后设置id为city-select的下拉列表中的选项
-
-  // 给select设置事件，当选项发生变化时调用函数citySelectChange
-
+  var select = document.getElementById('city-select');
+  for (var city in aqiSourceData) {
+    var option = document.createElement('option');
+    option.innerText = city;
+    select.appendChild(option);
+  }
+  // 给select设置事件，当选项发生变化时调用函数
+  select.onchange = citySelectChange;
 }
 
 /**
@@ -114,4 +142,4 @@ function init() {
   initAqiChartData();
 }
 
-init();
+window.onload = init;
